@@ -9,6 +9,6 @@ class BlogList(generics.ListAPIView):
     serializer_class = serializers.BlogSerializer
 
 
-class BlogDetail(generics.RetrieveAPIView):
+class BlogDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = models.Blog.objects.all()
     serializer_class = serializers.BlogSerializer
