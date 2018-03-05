@@ -7,7 +7,7 @@ class App extends Component {
 
   async componentDidMount() {
     try {
-      const res = await fetch('http://127.0.0.1:8000/api/');
+      const res = await fetch('https://backend-rkvgfflfnf.now.sh/api/');
       const posts = await res.json();
       this.setState({
         posts
